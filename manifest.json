@@ -1,0 +1,13 @@
+{
+  "name": "Youtube Tweaks",
+  "description": "Removes redundant parts of Youtube",
+  "version": "1.0",
+  "manifest_version": 3,
+  "permissions": ["storage", "activeTab", "scripting"],
+  "content_scripts": [{
+    "js": ["zapper.js"],
+    "matches": ["https://www.youtube.com/*"],
+    "run_at":  "document_idle"
+  }]
+  
+}
